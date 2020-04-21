@@ -29,6 +29,7 @@
     "18": "War",
     "19": "Western"
   }
+
   const nameList = Object.values(genres).map(item => item)
 
   //串接api及主要程式
@@ -48,8 +49,8 @@
     let htmlContent = ''
     data.forEach(function (item, index) {
       htmlContent += `
-        <div class= "col-sm-3">
-          <div class= "card mb-2 size">
+        <div class= "col-sm-6 col-md-3">
+          <div class= "card mb-2">
             <img class = "card-img-top" src="${POSTER_URL}${item.image}">
           <div class="card-body movie-item-body">
             <h6>${item.title}</h6>
